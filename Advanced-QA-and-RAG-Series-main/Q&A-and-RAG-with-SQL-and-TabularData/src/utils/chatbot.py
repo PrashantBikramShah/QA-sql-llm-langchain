@@ -60,6 +60,7 @@ class ChatBot:
                     )
                     response = chain.invoke({"question": message})
 
+            
                 else:
                     chatbot.append(
                         (message, f"SQL DB does not exist. Please first create the 'sqldb.db'."))

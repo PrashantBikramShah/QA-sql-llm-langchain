@@ -57,7 +57,7 @@ class LoadConfig:
         self.langchain_llm = ChatOpenAI(
             #openai_api_version=os.getenv("OPENAI_API_VERSION"),
             #azure_deployment=self.model_name,
-            model_name="gpt-4o-mini",
+            model_name="gpt-3.5-turbo",
             temperature=self.temperature)
 
     def load_chroma_client(self):
